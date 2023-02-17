@@ -4,10 +4,6 @@
 
 Application for managing tasks made using React. Simplify your tasks with an easy todo list.
 
-## Preview
-<img width="1142" alt="Screen Shot 2023-02-16 at 9 06 19 PM" src="https://user-images.githubusercontent.com/48497255/219542186-777a5efb-f618-490b-a19c-917355d611b9.png">
-
-
 ## Assignment Instructions
 ### Part 1 - Implement a Todo List Component 
 1. Create a new React component called TodoList that displays a list of todo items. 
@@ -19,6 +15,9 @@ Application for managing tasks made using React. Simplify your tasks with an eas
 1. Create a new React component called TodoApp that renders a TodoList component and a form to add new todo items.
 2. The form should have an input field for the todo item description and a button to add the item to the list.
 3. The TodoApp component should pass the list of todo items to the TodoList component as a prop.
+
+## Preview
+<img width="1142" alt="Screen Shot 2023-02-16 at 9 06 19 PM" src="https://user-images.githubusercontent.com/48497255/219542186-777a5efb-f618-490b-a19c-917355d611b9.png">
 
 ## Features
 - Creating tasks
