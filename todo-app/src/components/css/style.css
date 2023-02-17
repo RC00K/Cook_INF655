@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2b3037 !important;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  justify-content: center;
+}
+
+h1 {
+    color: #fcb817;
+    font-size: 40px !important;
+    font-weight: 200 !important;
+    text-align: center !important;
+}
+
+h4 {
+    font-size: 20px !important;
+    font-weight: 150 !important;
+    margin-bottom: 0rem !important;
+    text-align: center !important;
+    color: #a9a9a9;
+}
+
+
+p {
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
+form input {
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    padding: 1.5rem;
+    outline: none;
+    width: 100%;
+}
+
+form input::placeholder {
+    color: #ccc;
+}
+
+.todo-container {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 3rem 0;
+    max-width: 40rem;
+    width: 90vw;
+}
+
+.todo {
+    align-items: center;
+    background: #fcfcfb;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.todo:hover .remove {
+    display: block;
+}
+
+.todo h4 {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-left: 1.5;
+    line-height: 1.4;
+}
+
+.todo-list {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.todo-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 10px;
+}
+
+.todo-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    counter-reset: item 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-text {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: text-decoration 0.4s ease;
+}
+
+.todo-title {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.todo-description {
+    font-size: 16px;
+    text-align: left;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.read-more-button {
+    display: none;
+}
+
+.todo-description.expanded + .read-more-button {
+    display: block;
+}
+
+.add-todo-button {
+    background-color: #fcb817 !important;
+    color: black !important;
+    font-size: 18px !important;
+    padding: 4px 15px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    cursor: pointer !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.add-todo-button:hover,
+button:hover {
+    background-color: #333 !important;
+    border-color: #ffaf06 !important;
+    color: #ffaf06 !important
+}
+
+.complete-todo-button {
+    background-color: transparent !important;
+    color: #6f17fc !important;
+    font-size: 18px !important;
+    padding: 4px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.complete-todo-button:hover,
+button:hover {
+    background-color: transparent !important;
+    color: #333 !important;
+}
+
+.remove-todo-button {
+    background-color: transparent !important;
+    color: #fc1758 !important;
+    font-size: 18px !important;
+    padding: 4px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.remove-todo-button:hover,
+button:hover {
+    background-color: transparent !important;
+    color: #333 !important;
+}
+
+.bottom-sheet {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    text-align: center !important;
+}
+
+.list-border {
+    background-color: #ffffff;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
